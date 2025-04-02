@@ -1,0 +1,1 @@
+custardkit @ git+https://github.com/a24k/CustardKit@c051b556ba9cc01be8efe04fd8108da85679dfb0#subdirectory=python/
