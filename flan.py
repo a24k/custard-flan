@@ -17,10 +17,10 @@ custard = Custard(
     ),
     interface=Interface(
         key_style=KeyStyle.tenkey_style,
-        key_layout=GridFitLayout(row_count=6, column_count=4),
+        key_layout=GridFitLayout(row_count=11, column_count=4),
         keys=[
             KeyData(  # あ行
-                specifier=GridFitSpecifier(x=1, y=0),
+                specifier=GridFitSpecifier(x=2, y=0, width=2),
                 key=CustomKey(
                     design=KeyDesign(
                         label=MainAndSubLabel(main="あ", sub="ぁ"),
@@ -83,7 +83,7 @@ custard = Custard(
                 ),
             ),
             KeyData(  # か行
-                specifier=GridFitSpecifier(x=2, y=0),
+                specifier=GridFitSpecifier(x=4, y=0, width=2),
                 key=CustomKey(
                     design=KeyDesign(
                         label=MainAndSubLabel(main="か", sub="が"),
@@ -146,7 +146,7 @@ custard = Custard(
                 ),
             ),
             KeyData(  # さ行
-                specifier=GridFitSpecifier(x=3, y=0),
+                specifier=GridFitSpecifier(x=6, y=0, width=2),
                 key=CustomKey(
                     design=KeyDesign(
                         label=MainAndSubLabel(main="さ", sub="ざ"),
@@ -209,7 +209,7 @@ custard = Custard(
                 ),
             ),
             KeyData(  # た行
-                specifier=GridFitSpecifier(x=1, y=1),
+                specifier=GridFitSpecifier(x=2, y=1, width=2),
                 key=CustomKey(
                     design=KeyDesign(
                         label=MainAndSubLabel(main="た", sub="だ"),
@@ -272,7 +272,7 @@ custard = Custard(
                 ),
             ),
             KeyData(  # な行
-                specifier=GridFitSpecifier(x=2, y=1),
+                specifier=GridFitSpecifier(x=4, y=1, width=2),
                 key=CustomKey(
                     design=KeyDesign(
                         label=MainAndSubLabel(main="な", sub="ぱ"),
@@ -335,7 +335,7 @@ custard = Custard(
                 ),
             ),
             KeyData(  # は行
-                specifier=GridFitSpecifier(x=3, y=1),
+                specifier=GridFitSpecifier(x=6, y=1, width=2),
                 key=CustomKey(
                     design=KeyDesign(
                         label=MainAndSubLabel(main="は", sub="ば"),
@@ -398,7 +398,7 @@ custard = Custard(
                 ),
             ),
             KeyData(  # ま行
-                specifier=GridFitSpecifier(x=1, y=2),
+                specifier=GridFitSpecifier(x=2, y=2, width=2),
                 key=CustomKey(
                     design=KeyDesign(
                         label=MainAndSubLabel(main="ま", sub=""),
@@ -446,7 +446,7 @@ custard = Custard(
                 ),
             ),
             KeyData(  # や行
-                specifier=GridFitSpecifier(x=2, y=2),
+                specifier=GridFitSpecifier(x=4, y=2, width=2),
                 key=CustomKey(
                     design=KeyDesign(
                         label=MainAndSubLabel(main="や", sub="ゃ"),
@@ -509,7 +509,7 @@ custard = Custard(
                 ),
             ),
             KeyData(  # ら行
-                specifier=GridFitSpecifier(x=3, y=2),
+                specifier=GridFitSpecifier(x=6, y=2, width=2),
                 key=CustomKey(
                     design=KeyDesign(
                         label=MainAndSubLabel(main="ら", sub=""),
@@ -557,7 +557,7 @@ custard = Custard(
                 ),
             ),
             KeyData(  # わ行
-                specifier=GridFitSpecifier(x=2, y=3),
+                specifier=GridFitSpecifier(x=4, y=3, width=2),
                 key=CustomKey(
                     design=KeyDesign(
                         label=MainAndSubLabel(main="わ", sub=""),
