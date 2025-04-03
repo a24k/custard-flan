@@ -1,9 +1,9 @@
 from custardkit.custard import Custard
 from custardkit.custard import InputStyle, Language, Metadata
 from custardkit.custard import Interface, KeyStyle, GridFitLayout, GridFitSpecifier
-from custardkit.custard import KeyData, CustomKey
+from custardkit.custard import KeyData, CustomKey, SystemKey, SystemKeyType
 from custardkit.custard import KeyDesign, TextLabel, MainAndSubLabel, KeyColor
-from custardkit.custard import InputAction, LongpressAction
+from custardkit.custard import InputAction, LongpressAction, CompleteAction
 from custardkit.custard import FlickVariationData, FlickDirection
 from custardkit.custard import Variation, VariationDesign
 
@@ -13,7 +13,7 @@ custard = Custard(
     input_style=InputStyle.direct,
     metadata=Metadata(
         custard_version="1.0",
-        display_name="flan v0.1.0",
+        display_name="flan v0.1.1",
     ),
     interface=Interface(
         key_style=KeyStyle.tenkey_style,
@@ -556,6 +556,10 @@ custard = Custard(
                     ],
                 ),
             ),
+            KeyData(  # 小文字
+                specifier=GridFitSpecifier(x=2, y=3, width=2),
+                key=SystemKey(identifier=SystemKeyType.flick_kogaki)
+            ),
             KeyData(  # わ行
                 specifier=GridFitSpecifier(x=4, y=3, width=2),
                 key=CustomKey(
@@ -603,6 +607,14 @@ custard = Custard(
                         ),
                     ],
                 ),
+            ),
+            KeyData(  # 句読点
+                specifier=GridFitSpecifier(x=6, y=3, width=2),
+                key=SystemKey(identifier=SystemKeyType.flick_kutoten)
+            ),
+            KeyData(  # 確定
+                specifier=GridFitSpecifier(x=8, y=2, width=2, height=2),
+                key=SystemKey(identifier=SystemKeyType.enter)
             ),
         ],
     ),
