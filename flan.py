@@ -3,7 +3,7 @@ from custardkit.custard import InputStyle, Language, Metadata
 from custardkit.custard import Interface, KeyStyle, GridFitLayout, GridFitSpecifier
 from custardkit.custard import KeyData, CustomKey, SystemKey, SystemKeyType
 from custardkit.custard import KeyDesign, KeyColor
-from custardkit.custard import TextLabel, MainAndSubLabel, SystemImageLabel
+from custardkit.custard import TextLabel, SystemImageLabel
 from custardkit.custard import (
     InputAction,
     LongpressAction,
@@ -20,7 +20,7 @@ keys_kana = [
         specifier=GridFitSpecifier(x=2, y=0, width=2),
         key=CustomKey(
             design=KeyDesign(
-                label=MainAndSubLabel(main="あ", sub="ぁ"),
+                label=TextLabel("あ"),
                 color=KeyColor.normal,
             ),
             press_actions=[InputAction("あ")],
@@ -31,7 +31,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.left,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="い")),
+                        design=VariationDesign(label=TextLabel("い")),
                         press_actions=[
                             InputAction("い"),
                         ],
@@ -41,7 +41,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.top,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="う")),
+                        design=VariationDesign(label=TextLabel("う")),
                         press_actions=[
                             InputAction("う"),
                         ],
@@ -51,7 +51,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.right,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="え")),
+                        design=VariationDesign(label=TextLabel("え")),
                         press_actions=[
                             InputAction("え"),
                         ],
@@ -61,7 +61,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.bottom,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="お")),
+                        design=VariationDesign(label=TextLabel("お")),
                         press_actions=[
                             InputAction("お"),
                         ],
@@ -75,7 +75,7 @@ keys_kana = [
         specifier=GridFitSpecifier(x=4, y=0, width=2),
         key=CustomKey(
             design=KeyDesign(
-                label=MainAndSubLabel(main="か", sub="が"),
+                label=TextLabel("か"),
                 color=KeyColor.normal,
             ),
             press_actions=[InputAction("か")],
@@ -86,7 +86,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.left,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="き")),
+                        design=VariationDesign(label=TextLabel("き")),
                         press_actions=[
                             InputAction("き"),
                         ],
@@ -96,7 +96,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.top,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="く")),
+                        design=VariationDesign(label=TextLabel("く")),
                         press_actions=[
                             InputAction("く"),
                         ],
@@ -106,7 +106,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.right,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="け")),
+                        design=VariationDesign(label=TextLabel("け")),
                         press_actions=[
                             InputAction("け"),
                         ],
@@ -116,7 +116,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.bottom,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="こ")),
+                        design=VariationDesign(label=TextLabel("こ")),
                         press_actions=[
                             InputAction("こ"),
                         ],
@@ -130,7 +130,7 @@ keys_kana = [
         specifier=GridFitSpecifier(x=6, y=0, width=2),
         key=CustomKey(
             design=KeyDesign(
-                label=MainAndSubLabel(main="さ", sub="ざ"),
+                label=TextLabel("さ"),
                 color=KeyColor.normal,
             ),
             press_actions=[InputAction("さ")],
@@ -141,7 +141,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.left,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="し")),
+                        design=VariationDesign(label=TextLabel("し")),
                         press_actions=[
                             InputAction("し"),
                         ],
@@ -151,7 +151,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.top,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="す")),
+                        design=VariationDesign(label=TextLabel("す")),
                         press_actions=[
                             InputAction("す"),
                         ],
@@ -161,7 +161,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.right,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="せ")),
+                        design=VariationDesign(label=TextLabel("せ")),
                         press_actions=[
                             InputAction("せ"),
                         ],
@@ -171,7 +171,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.bottom,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="そ")),
+                        design=VariationDesign(label=TextLabel("そ")),
                         press_actions=[
                             InputAction("そ"),
                         ],
@@ -185,7 +185,7 @@ keys_kana = [
         specifier=GridFitSpecifier(x=2, y=1, width=2),
         key=CustomKey(
             design=KeyDesign(
-                label=MainAndSubLabel(main="た", sub="だ"),
+                label=TextLabel("た"),
                 color=KeyColor.normal,
             ),
             press_actions=[InputAction("た")],
@@ -196,7 +196,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.left,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="ち")),
+                        design=VariationDesign(label=TextLabel("ち")),
                         press_actions=[
                             InputAction("ち"),
                         ],
@@ -206,7 +206,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.top,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="つ")),
+                        design=VariationDesign(label=TextLabel("つ")),
                         press_actions=[
                             InputAction("つ"),
                         ],
@@ -216,7 +216,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.right,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="て")),
+                        design=VariationDesign(label=TextLabel("て")),
                         press_actions=[
                             InputAction("て"),
                         ],
@@ -226,7 +226,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.bottom,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="と")),
+                        design=VariationDesign(label=TextLabel("と")),
                         press_actions=[
                             InputAction("と"),
                         ],
@@ -240,7 +240,7 @@ keys_kana = [
         specifier=GridFitSpecifier(x=4, y=1, width=2),
         key=CustomKey(
             design=KeyDesign(
-                label=MainAndSubLabel(main="な", sub="ぱ"),
+                label=TextLabel("な"),
                 color=KeyColor.normal,
             ),
             press_actions=[InputAction("な")],
@@ -251,7 +251,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.left,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="に")),
+                        design=VariationDesign(label=TextLabel("に")),
                         press_actions=[
                             InputAction("に"),
                         ],
@@ -261,7 +261,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.top,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="ぬ")),
+                        design=VariationDesign(label=TextLabel("ぬ")),
                         press_actions=[
                             InputAction("ぬ"),
                         ],
@@ -271,7 +271,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.right,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="ね")),
+                        design=VariationDesign(label=TextLabel("ね")),
                         press_actions=[
                             InputAction("ね"),
                         ],
@@ -281,7 +281,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.bottom,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="の")),
+                        design=VariationDesign(label=TextLabel("の")),
                         press_actions=[
                             InputAction("の"),
                         ],
@@ -295,7 +295,7 @@ keys_kana = [
         specifier=GridFitSpecifier(x=6, y=1, width=2),
         key=CustomKey(
             design=KeyDesign(
-                label=MainAndSubLabel(main="は", sub="ば"),
+                label=TextLabel("は"),
                 color=KeyColor.normal,
             ),
             press_actions=[InputAction("は")],
@@ -306,7 +306,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.left,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="ひ")),
+                        design=VariationDesign(label=TextLabel("ひ")),
                         press_actions=[
                             InputAction("ひ"),
                         ],
@@ -316,7 +316,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.top,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="ふ")),
+                        design=VariationDesign(label=TextLabel("ふ")),
                         press_actions=[
                             InputAction("ふ"),
                         ],
@@ -326,7 +326,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.right,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="へ")),
+                        design=VariationDesign(label=TextLabel("へ")),
                         press_actions=[
                             InputAction("へ"),
                         ],
@@ -336,7 +336,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.bottom,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="ほ")),
+                        design=VariationDesign(label=TextLabel("ほ")),
                         press_actions=[
                             InputAction("ほ"),
                         ],
@@ -350,7 +350,7 @@ keys_kana = [
         specifier=GridFitSpecifier(x=2, y=2, width=2),
         key=CustomKey(
             design=KeyDesign(
-                label=MainAndSubLabel(main="ま", sub=""),
+                label=TextLabel("ま"),
                 color=KeyColor.normal,
             ),
             press_actions=[InputAction("ま")],
@@ -358,7 +358,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.left,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="み")),
+                        design=VariationDesign(label=TextLabel("み")),
                         press_actions=[
                             InputAction("み"),
                         ],
@@ -367,7 +367,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.top,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="む")),
+                        design=VariationDesign(label=TextLabel("む")),
                         press_actions=[
                             InputAction("む"),
                         ],
@@ -376,7 +376,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.right,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="め")),
+                        design=VariationDesign(label=TextLabel("め")),
                         press_actions=[
                             InputAction("め"),
                         ],
@@ -385,7 +385,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.bottom,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="も")),
+                        design=VariationDesign(label=TextLabel("も")),
                         press_actions=[
                             InputAction("も"),
                         ],
@@ -398,7 +398,7 @@ keys_kana = [
         specifier=GridFitSpecifier(x=4, y=2, width=2),
         key=CustomKey(
             design=KeyDesign(
-                label=MainAndSubLabel(main="や", sub="ゃ"),
+                label=TextLabel("や"),
                 color=KeyColor.normal,
             ),
             press_actions=[InputAction("や")],
@@ -409,7 +409,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.left,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="「")),
+                        design=VariationDesign(label=TextLabel("「")),
                         press_actions=[
                             InputAction("「"),
                         ],
@@ -419,7 +419,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.top,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="ゆ")),
+                        design=VariationDesign(label=TextLabel("ゆ")),
                         press_actions=[
                             InputAction("ゆ"),
                         ],
@@ -429,7 +429,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.right,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="」")),
+                        design=VariationDesign(label=TextLabel("」")),
                         press_actions=[
                             InputAction("」"),
                         ],
@@ -439,7 +439,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.bottom,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="よ")),
+                        design=VariationDesign(label=TextLabel("よ")),
                         press_actions=[
                             InputAction("よ"),
                         ],
@@ -453,7 +453,7 @@ keys_kana = [
         specifier=GridFitSpecifier(x=6, y=2, width=2),
         key=CustomKey(
             design=KeyDesign(
-                label=MainAndSubLabel(main="ら", sub=""),
+                label=TextLabel("ら"),
                 color=KeyColor.normal,
             ),
             press_actions=[InputAction("ら")],
@@ -461,7 +461,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.left,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="り")),
+                        design=VariationDesign(label=TextLabel("り")),
                         press_actions=[
                             InputAction("り"),
                         ],
@@ -470,7 +470,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.top,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="る")),
+                        design=VariationDesign(label=TextLabel("る")),
                         press_actions=[
                             InputAction("る"),
                         ],
@@ -479,7 +479,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.right,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="れ")),
+                        design=VariationDesign(label=TextLabel("れ")),
                         press_actions=[
                             InputAction("れ"),
                         ],
@@ -488,7 +488,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.bottom,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="ろ")),
+                        design=VariationDesign(label=TextLabel("ろ")),
                         press_actions=[
                             InputAction("ろ"),
                         ],
@@ -501,7 +501,7 @@ keys_kana = [
         specifier=GridFitSpecifier(x=4, y=3, width=2),
         key=CustomKey(
             design=KeyDesign(
-                label=MainAndSubLabel(main="わ", sub=""),
+                label=TextLabel("わ"),
                 color=KeyColor.normal,
             ),
             press_actions=[InputAction("わ")],
@@ -509,7 +509,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.left,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="を")),
+                        design=VariationDesign(label=TextLabel("を")),
                         press_actions=[
                             InputAction("を"),
                         ],
@@ -518,7 +518,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.top,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="ん")),
+                        design=VariationDesign(label=TextLabel("ん")),
                         press_actions=[
                             InputAction("ん"),
                         ],
@@ -527,7 +527,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.right,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="ー")),
+                        design=VariationDesign(label=TextLabel("ー")),
                         press_actions=[
                             InputAction("ー"),
                         ],
@@ -536,7 +536,7 @@ keys_kana = [
                 FlickVariationData(
                     direction=FlickDirection.bottom,
                     key=Variation(
-                        design=VariationDesign(label=TextLabel(text="〜")),
+                        design=VariationDesign(label=TextLabel("〜")),
                         press_actions=[
                             InputAction("〜"),
                         ],
@@ -552,7 +552,7 @@ keys_other = [
         specifier=GridFitSpecifier(x=8, y=0, width=2),
         key=CustomKey(
             design=KeyDesign(
-                label=SystemImageLabel(identifier="delete.left"),
+                label=SystemImageLabel("delete.left"),
                 color=KeyColor.special,
             ),
             press_actions=[DeleteAction(1)],
@@ -564,7 +564,7 @@ keys_other = [
                     direction=FlickDirection.left,
                     key=Variation(
                         design=VariationDesign(
-                            label=SystemImageLabel(identifier="delete.left.fill")
+                            label=SystemImageLabel("delete.left.fill")
                         ),
                         press_actions=[
                             SmartDeleteDefaultAction(),
@@ -585,7 +585,7 @@ keys_other = [
         specifier=GridFitSpecifier(x=8, y=1, width=2),
         key=CustomKey(
             design=KeyDesign(
-                label=MainAndSubLabel(main="空白", sub=""),
+                label=SystemImageLabel("space"),
                 color=KeyColor.special,
             ),
             press_actions=[InputAction(" ")],
@@ -614,12 +614,12 @@ custard = Custard(
     input_style=InputStyle.direct,
     metadata=Metadata(
         custard_version="1.0",
-        display_name="flan v0.1.3",
+        display_name="flan v0.2.0",
     ),
     interface=Interface(
         key_style=KeyStyle.tenkey_style,
         key_layout=GridFitLayout(row_count=11, column_count=4),
-        keys=keys_kana + keys_other,
+        keys=(keys_kana + keys_other),
     ),
 )
 
